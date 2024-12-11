@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "engines": {},
   "scripts": {
-    "build": "esbuild ./src/index.ts --minify --bundle --log-level=info --external:k6 --format=cjs --legal-comments=none --outfile=build/k6chaijs.min.js"
+    "build": "esbuild ./src/index.ts --minify --bundle --log-level=info --external:k6 --format=cjs --legal-comments=none --outfile=build/k6chaijs.min.js",
+    "types": "tsc --project tsconfig.types.json"
   },
   "keywords": [
     "k6"
